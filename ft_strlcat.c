@@ -6,7 +6,7 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/11 03:22:56 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/14 13:42:09 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/14 14:44:38 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	dlen;
 	size_t	slen;
-	
+
 	dlen = ft_strlen(dst);
 	slen = ft_strlen(src);
 	if (dlen + 1 > dstsize)

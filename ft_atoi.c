@@ -6,7 +6,7 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 13:00:39 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/10 22:19:40 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/14 14:38:27 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ int		ft_atoi(const char *str)
 	int sign;
 	int num;
 
+	if (str == NULL)
+		return (0);
 	num = 0;
 	while ((9 <= *str && *str <= 13) || *str == ' ')
 		str++;

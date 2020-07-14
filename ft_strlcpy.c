@@ -6,7 +6,7 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/10 22:37:40 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/10 23:10:47 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/14 14:39:25 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 
+	if (dst == NULL || src == NULL)
+		return (0);
 	i = 0;
 	if (dstsize)
 	{
