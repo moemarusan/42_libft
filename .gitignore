@@ -1,3 +1,5 @@
 *.h.gch
 a.out
 main.c
+libft.a
+libft.h.gcc
