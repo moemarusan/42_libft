@@ -12,7 +12,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 PART1 += ft_memset.c
 PART1 += ft_bzero.c
-# PART1 += ft_memcpy.c
+PART1 += ft_memcpy.c
 # PART1 += ft_memccpy.c
 # PART1 += ft_memmove.c
 # PART1 += ft_memchr.c
