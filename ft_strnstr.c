@@ -6,7 +6,7 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 20:41:46 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/15 23:57:38 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/16 20:32:29 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	char *h;
-	char *n;
+	char	*h;
+	char	*n;
 	size_t	i;
 
 	h = (char *)haystack;
