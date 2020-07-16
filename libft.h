@@ -32,7 +32,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 // int		ft_min(int n1, int n2);
 // int		ft_max(int n1, int n2);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-// void	*ft_calloc(size_t count, size_t size);
+void	*ft_calloc(size_t count, size_t size);
 // size_t	ft_strnlen(const char *s, size_t maxlen);
 // int		ft_isspace(char c);
 void	*ft_memchr(const void *s, int c, size_t n);

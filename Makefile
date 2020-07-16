@@ -32,7 +32,7 @@ PART1 += ft_isascii.c
 PART1 += ft_isprint.c
 PART1 += ft_toupper.c
 PART1 += ft_tolower.c
-# PART1 += ft_calloc.c
+PART1 += ft_calloc.c
 # PART1 += ft_strdup.c
 
 # PART2 += ft_substr.c
