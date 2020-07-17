@@ -45,7 +45,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 // char	*ft_itoa(int n);
 // char	ft_itoc(int n);
 // int		ft_ctoi(char c);
-// char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);

@@ -1,29 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memccpy.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/07/16 08:49:19 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/17 23:40:01 by msaiki           ###   ########.fr       */
+/*   Created: 2020/07/17 12:46:12 by msaiki            #+#    #+#             */
+/*   Updated: 2020/07/18 00:06:31 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned char *d;
-	unsigned char *s;
+	char			*p;
+	unsigned int	i;
 
-	d = dst;
-	s = (unsigned char *)src;
-	while (n--)
+	i = 0;
+	if ((p = ft_calloc(ft_strlen(s) + 1, 1)))
 	{
-		*d++ = *s;
-		if (*s++ == (unsigned char)c)
-			return (d);
+		while (s[i])
+		{
+			p[i] = (*f)(i, s[i]);
+			i++;
+		}
+		p[i] = '\0';
 	}
-	return (NULL);
+	return (p);
 }
