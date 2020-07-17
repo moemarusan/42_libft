@@ -36,7 +36,7 @@ PART1 += ft_calloc.c
 PART1 += ft_strdup.c
 
 PART2 += ft_substr.c
-# PART2 += ft_strjoin.c
+PART2 += ft_strjoin.c
 # PART2 += ft_strtrim.c
 # PART2 += ft_split.c
 # PART2 += ft_itoa.c
