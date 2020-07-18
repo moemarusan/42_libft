@@ -2,11 +2,8 @@ NAME = libft.a
 CC = gcc
 PART1 =
 PART2 =
-BONUS =
-ADDED =
-SRCS = $(PART1) $(PART2) $(ADDED)
+SRCS = $(PART1) $(PART2)
 OBJS	= $(SRCS:%.c=%.o)
-BOBJS	= $(BONUS:%.c=%.o)
 CLIBS	= -L . -lft
 CFLAGS = -Wall -Wextra -Werror
 
@@ -46,39 +43,17 @@ PART2 += ft_putstr_fd.c
 PART2 += ft_putendl_fd.c
 PART2 += ft_putnbr_fd.c
 
-# BONUS += ft_lstnew.c
-# BONUS += ft_lstadd_front.c
-# BONUS += ft_lstsize.c
-# BONUS += ft_lstlast.c
-# BONUS += ft_lstadd_back.c
-# BONUS += ft_lstdelone.c
-# BONUS += ft_lstclear.c
-# BONUS += ft_lstiter.c
-# BONUS += ft_lstmap.c
-
-# ADDED += ft_min.c
-# ADDED += ft_max.c
-# ADDED += ft_ctoi.c
-# ADDED += ft_itoc.c
-# ADDED += ft_isspace.c
-# ADDED += ft_strnlen.c
-
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 
 clean:
-	rm -f $(OBJS) $(BOBJS)
+	rm -f $(OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-$(BOBJS): $(OBJS)
-
-bonus: $(BOBJS)
-	ar rc $(NAME) $(OBJS) $(BOBJS)
 
 .PHONY: all clean fclean re bonus

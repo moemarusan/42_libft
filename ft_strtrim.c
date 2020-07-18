@@ -6,13 +6,13 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 01:37:48 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/18 03:11:54 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/18 21:21:39 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		is_found_c_in_set(char c, char const *set)
+static int	is_found_c_in_set(char c, char const *set)
 {
 	if (!set)
 		return (0);
@@ -25,7 +25,7 @@ static int		is_found_c_in_set(char c, char const *set)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char		*ft_strtrim(char const *s1, char const *set)
 {
 	char	*s;
 	int		len;

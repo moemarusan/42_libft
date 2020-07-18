@@ -6,7 +6,7 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/17 09:50:19 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/17 10:09:39 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/18 21:00:15 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

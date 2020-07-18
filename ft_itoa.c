@@ -6,15 +6,15 @@
 /*   By: msaiki <msaiki@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/18 00:15:24 by msaiki            #+#    #+#             */
-/*   Updated: 2020/07/18 01:33:55 by msaiki           ###   ########.fr       */
+/*   Updated: 2020/07/18 21:22:19 by msaiki           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ketahakaru(int n)
+static int		keta_hakaru(int n)
 {
-	int	len;
+	int		len;
 
 	if (-1 < n && n < 10)
 		return (1);
@@ -30,17 +30,17 @@ static int		ketahakaru(int n)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char	*p;
 	int		len;
 	int		is_negative;
 
 	if (n == -2147483648)
-		return(ft_strdup("-2147483648"));
-	len = ketahakaru(n);
+		return (ft_strdup("-2147483648"));
+	len = keta_hakaru(n);
 	is_negative = (n >= 0) ? 0 : 1;
-	if ((p = ft_calloc(ketahakaru(n) + 1, 1)))
+	if ((p = ft_calloc(keta_hakaru(n) + 1, 1)))
 	{
 		if (n < 0)
 			p[0] = '-';
